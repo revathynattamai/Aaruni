@@ -1,0 +1,39 @@
+<html>
+<body>
+    <script type="text/javascript">
+    function evenorodd()
+    {
+    var num=document.getElementById('bb')
+    "<br>"
+      if (num.value=="")
+ {
+        alert("enter a value")
+    }  
+    else
+    { 
+    if (isNaN(num.value))
+{
+    document.write("Enter only numbers. Not strings")
+}
+else
+{
+        document.write("Number:" +num.value+"<br>")       
+        if (num.value%2==0)
+        {
+        document.write("Even number")}
+        else
+        {
+             document.write("odd number")}
+    }}
+    }
+    </script>
+
+<form name="aa" method="get" align="center">
+    <br><br>
+Enter a number:<input type="text" value="" id="bb" size="5">
+<br>
+<input type="button" value="Evaluate" onclick="evenorodd()">&nbsp
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
